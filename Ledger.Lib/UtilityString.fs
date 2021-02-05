@@ -11,9 +11,9 @@ module UtilityString =
 
     let (|StringLengthIsIllegal|_|) (minLength: int) (maxLength: int) (str: string)  =
         if str.Length < minLength then
-            None
-        elif str.Length > maxLength then
-            None
-        else
             Some ()
+        elif str.Length > maxLength then
+            Some ()
+        else
+            None
 
